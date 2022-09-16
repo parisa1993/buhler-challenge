@@ -3,7 +3,6 @@ import Layout from "./components/Layout";
 import { BrowserRouter } from "react-router-dom";
 import { AuthContext } from "./context/Auth";
 import { User } from "./models/User";
-import "./styles/style.sass";
 
 function App() {
   const [user, setUser] = useState<User | null>(null);
