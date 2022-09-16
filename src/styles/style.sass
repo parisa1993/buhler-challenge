@@ -16,17 +16,8 @@ nav
         height: auto
 .content
     padding: 0
-    .navigation
-        .list-group
-            width: 100%
-            background-color: $background-navigation
-            .list-group-item
-                padding: 0
-                width: 120px
-            .section
-                .name
-                    line-height: 60px
     .section
+        width: 120px
         text-align: center
         font-weight: bold
         min-height: 60px
@@ -49,3 +40,39 @@ nav
         color: #fff
         .state-icon
             color: $color-state-warning
+    .list-group-item
+        padding: 0
+    .section-icon
+        top: 17px
+        position: relative
+        span
+            font-size: 58px
+    .navigation
+        .list-group
+            width: 100%
+            background-color: $background-navigation
+            .section
+                .name
+                    line-height: 60px
+    .overview
+        height: calc(100vh - 134px)
+        .group
+            position: absolute
+            width: 100%
+            top: 50%
+            transform: translateY(-50%)
+        .group::before
+            content: ""
+            position: absolute
+            display: inline-block
+            width: calc(480px + (100% - 480px) / 8 * 6)
+            height: 6px
+            background-color: #289d04
+            left: 50%
+            transform: translateX(-50%)
+            top: calc(50% - 3px)
+        .list-group-item
+            margin: 0 calc((100% - 480px) / 8)
+        .name
+            margin-top: 12px
+    
