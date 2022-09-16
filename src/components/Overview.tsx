@@ -1,5 +1,4 @@
 import React from "react";
-import ListGroup from "react-bootstrap/ListGroup";
 import { Machine } from "../models/Machine";
 import { SectionShowType } from "../models/SectionShowType";
 import Section from "./Section";
