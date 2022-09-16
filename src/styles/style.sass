@@ -1,11 +1,49 @@
+@import "./variables"
+
 nav
+    background-color: $background-navigation
+    border-bottom: 6px solid $logo-color
     .material-icons
         position: relative
         top: 7px
         margin-right: 7px
-
 #logo
     width: 200px
     img
         width: 100%
         height: auto
+.content
+    padding: 0
+    .navigation
+        .list-group
+            width: 100%
+            background-color: $background-navigation
+            .list-group-item
+                padding: 0
+                width: 120px
+            .section
+                .name
+                    line-height: 60px
+    .section
+        text-align: center
+        font-weight: bold
+        min-height: 60px
+        .state-icon
+            position: absolute
+            right: 0
+            font-size: 21px
+    .running
+        background-color: $background-running
+        color: black
+        .state-icon
+            color: $color-state-running
+    .alarm
+        background-color: $background-alarm
+        color: #fff
+        .state-icon
+            color: $color-state-alarm
+    .warning
+        background-color: $background-warning
+        color: #fff
+        .state-icon
+            color: $color-state-warning

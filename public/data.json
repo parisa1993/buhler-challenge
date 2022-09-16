@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Scale",
+    "icon": "system_update_alt",
+    "state": 1
+  },
+  {
+    "id": 2,
+    "name": "Attacher",
+    "icon": "wysiwyg",
+    "state": 2
+  },
+  {
+    "id": 3,
+    "name": "Packer",
+    "icon": "inventory",
+    "state": 1
+  },
+  {
+    "id": 4,
+    "name": "Closer",
+    "icon": "calendar_view_month",
+    "state": 3
+  }
+]

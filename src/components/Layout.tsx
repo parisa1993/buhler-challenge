@@ -10,7 +10,7 @@ export default function Layout() {
   const { user } = useContext(AuthContext);
   return (
     <>
-      <Navbar bg="light" expand="lg" variant="light">
+      <Navbar expand="lg" variant="light">
         <Container>
           <Navbar.Brand id="logo" href="/">
             <img src={logo} alt="logo" />
@@ -37,7 +37,7 @@ export default function Layout() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <Container className="content">
+      <Container fluid className="content">
         <Routes />
       </Container>
     </>
