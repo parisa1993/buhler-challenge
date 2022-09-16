@@ -7,15 +7,15 @@ import Section from "./Section";
 export const Overview: React.FC<{ machines: Machine[] }> = ({ machines }) => {
   return (
     <div className="overview">
-      <ListGroup horizontal className="group">
+      <div className="group">
         {machines?.map((machine) => {
           return (
-            <ListGroup.Item>
+            <div className="item">
               <Section machine={machine} type={SectionShowType.Overview} />
-            </ListGroup.Item>
+            </div>
           );
         })}
-      </ListGroup>
+      </div>
     </div>
   );
 };

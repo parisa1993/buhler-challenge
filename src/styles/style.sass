@@ -17,6 +17,7 @@ nav
 .content
     padding: 0
     .section
+        position: relative
         width: 120px
         text-align: center
         font-weight: bold
@@ -25,6 +26,7 @@ nav
             position: absolute
             right: 0
             font-size: 21px
+            margin: 4px
     .running
         background-color: $background-running
         color: black
@@ -57,10 +59,14 @@ nav
     .overview
         height: calc(100vh - 134px)
         .group
-            position: absolute
+            display: flex
+            flex-direction: row
+            flex-wrap: nowrap
+            justify-content: center
+            align-items: center
+            align-content: center
+            height: 100%
             width: 100%
-            top: 50%
-            transform: translateY(-50%)
         .group::before
             content: ""
             position: absolute
@@ -70,8 +76,14 @@ nav
             background-color: #289d04
             left: 50%
             transform: translateX(-50%)
-            top: calc(50% - 3px)
-        .list-group-item
+            z-index: -1
+        .item
+            display: block
+            flex-grow: 0
+            flex-shrink: 1
+            flex-basis: auto
+            align-self: center
+            order: 0
             margin: 0 calc((100% - 480px) / 8)
         .name
             margin-top: 12px
