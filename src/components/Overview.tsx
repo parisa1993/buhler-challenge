@@ -9,7 +9,7 @@ export const Overview: React.FC<{ machines: Machine[] }> = ({ machines }) => {
       <div className="group">
         {machines?.map((machine) => {
           return (
-            <div className="item">
+            <div className="item" key={machine.id}>
               <Section machine={machine} type={SectionShowType.Overview} />
             </div>
           );

@@ -10,7 +10,7 @@ export const Navigation: React.FC<{ machines: Machine[] }> = ({ machines }) => {
       <ListGroup horizontal>
         {machines?.map((machine) => {
           return (
-            <ListGroup.Item>
+            <ListGroup.Item key={machine.id}>
               <Section machine={machine} type={SectionShowType.Navigation} />
             </ListGroup.Item>
           );
