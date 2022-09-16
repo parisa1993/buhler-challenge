@@ -5,7 +5,7 @@ import Section from "./Section";
 
 export const Overview: React.FC<{ machines: Machine[] }> = ({ machines }) => {
   return (
-    <div className="overview">
+    <div className="overview" data-testid="overview">
       <div className="group">
         {machines?.map((machine) => {
           return (

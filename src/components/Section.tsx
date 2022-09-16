@@ -12,7 +12,10 @@ export const Section: React.FC<{ machine: Machine; type: SectionShowType }> = ({
     <div className={`section ${RunningState[machine.state].toLowerCase()}`}>
       <StateIcon state={machine.state} />
       {type === SectionShowType.Overview ? (
-        <div className="section-icon">
+        <div
+          className="section-icon"
+          data-testid={`section-icon-${machine.id}`}
+        >
           <span className="material-icons">{machine.icon}</span>
         </div>
       ) : (

@@ -6,8 +6,8 @@ import Section from "./Section";
 
 export const Navigation: React.FC<{ machines: Machine[] }> = ({ machines }) => {
   return (
-    <div className="navigation">
-      <ListGroup horizontal>
+    <div className="navigation" data-testid="navigation">
+      <ListGroup horizontal data-testid="navigation-group">
         {machines?.map((machine) => {
           return (
             <ListGroup.Item key={machine.id}>
